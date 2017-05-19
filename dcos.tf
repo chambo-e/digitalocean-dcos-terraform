@@ -92,7 +92,7 @@ resource "digitalocean_droplet" "dcos_master" {
   }
 
   provisioner "file" {
-    source      = "./do-install.sh"
+    source = "./do-install.sh"
     destination = "/tmp/do-install.sh"
   }
 
